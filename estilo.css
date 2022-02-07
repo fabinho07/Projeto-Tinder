@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Condensed:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,400;0,700;1,500;1,700&family=Sarala&display=swap');
+
+body {
+    background: #eef0f1;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* navbar */
+
+.navbar {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 45px;
+
+}
+
+.navbar i {
+    font-size: 1.3rem;
+    color: rgb(148, 147, 147);
+}
+
+.navbar i:nth-child(1) {
+    color: hsl(347, 99%, 64%);
+}
+
+.foto-ação {
+    height: calc(100vh - 45px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto {
+    width: 98vw;
+    height: 85vh;
+    background: url("img/fototinder.jpg") center/cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    box-shadow: 0 2px 10px rgba(136, 136, 77, .77);
+  
+}
+
+.foto-texto {
+    padding: 15px;
+    background: rgba(2, 0, 36);
+    background: rgba(2, 0, 36);
+    background: linear-gradient(180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(35, 34, 65, 0) 0%,
+    rgba(0, 0 , 0, .7) 70%
+    );
+    border-radius: 10px;
+}
+
+.nome-idade {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.nome-idade h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.nome-idade h2:nth-child(2) {
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+.biografia {
+    line-height: 1.8rem;
+    font-weight: 500;
+    font: 1rem;
+}
+
+.ação {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 30px;
+}
+
+.ações {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px 0 rgba(112, 125, 135, .15);
+}
+
+.ações:nth-child(1) {
+    color: rgb(230, 50, 112);
+    
+}
+
+.ações:nth-child(2) {
+    color: rgb(76, 115, 243);
+    
+}
+
+.ações:nth-child(3) {
+    color: rgb(175, 236, 125);
+    
+}
+
+@media (min-width: 1030px) {
+    .foto {
+        width: 367px;
+        height: 684px;
+    }
+
+    .ações {
+        flex: initial;
+    }
+
+    .foto-ação {
+        justify-content: center;
+    }
+
+    .navbar {
+        width: 400px;
+        margin: auto;
+
+    }
+}
